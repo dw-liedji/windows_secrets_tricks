@@ -31,6 +31,7 @@ Once the properties dialogue box opens press OK (which saves the color change)
 
 
 ## Solve sublime text 3 latextools error COULD NOT COMPILE! 
+### This is the error
 
 TraditionalBuilder: Invoking pdflatex... 
 
@@ -39,7 +40,7 @@ COULD NOT COMPILE!
 Attempted command:pdflatex -b -p --tex-option="--synctex=1" filename.tex
 Build engine: Traditional Builder
 
-### solution
+### This is the solution (simple)
 
 Do not open sublime text 3 using the "subl" command line command.
 use the "sublime_text" command instead or open sublime text 3 from menu icon and everything will compile now correctly.
