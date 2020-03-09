@@ -51,7 +51,7 @@ That's.
   
 ##  Sublime Text 3.x (after Build 32XX)
 
-**1. Add this to your windows hosts.
+**1. Add this to your windows hosts.**
 
 - hosts location: C:\Windows\System32\drivers\etc
 
@@ -63,7 +63,7 @@ That's.
 
 ```
 
-**2. copy and paste the following linc key.
+**2. copy and paste the following linc key.**
 
 ```
 
