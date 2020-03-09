@@ -51,20 +51,21 @@ That's.
   
 ##  Sublime Text 3.x (after Build 32XX)
 
-
-```
-1. Add this to your windows hosts.
+**1. Add this to your windows hosts.
 
 - hosts location: C:\Windows\System32\drivers\etc
 
 - paste the following strings
 
+```
 127.0.0.1 www.sublimetext.com
 127.0.0.1 license.sublimehq.com
 
+```
 
-2. copy and paste the following linc key.
+**2. copy and paste the following linc key.
 
+```
 
 —– BEGIN LICENSE —–
 Member J2TeaM
@@ -79,5 +80,6 @@ A684C2DC 0B1583D4 19CBD290 217618CD
 DD9AF44B 99C49590 D2DBDEE1 75860FD2
 8C8BB2AD B2ECE5A4 EFC08AF2 25A9B864
 —— END LICENSE ——​
+
 ```
 
