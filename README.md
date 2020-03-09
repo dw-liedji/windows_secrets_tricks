@@ -7,7 +7,7 @@ In this repository some windows cool tricks are documented
 
 ### step 1
 
-Download the colortool utils from this repository.
+Download the colortool utils from [this](https://github.com/Microsoft/Terminal/tree/master/src/tools/ColorTool) repository.
 
 ### step 2
 
