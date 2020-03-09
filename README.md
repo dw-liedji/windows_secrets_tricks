@@ -51,7 +51,7 @@ That's.
   
 ##  Sublime Text 3.x (after Build 32XX)
 
-**1. Add this to your windows hosts.**
+1. Add this to your windows hosts.
 
 - hosts location: C:\Windows\System32\drivers\etc
 
@@ -63,7 +63,7 @@ That's.
 
 ```
 
-**2. copy and paste the following linc key.**
+2. copy and paste the following linc key.
 
 ```
 
@@ -83,3 +83,38 @@ DD9AF44B 99C49590 D2DBDEE1 75860FD2
 
 ```
 
+### Setting conda (ananconda) in sublime text 3
+
+1. install conda package from the control package of sublime text 3
+2. open the conda user setting file an configure like this
+
+```JSON
+
+// Default settings for sublime-text-conda:
+{
+    // executable is the path to anaconda's python
+    // this python executable is used in order to find conda
+    "executable": "C:\\ProgramData\\Anaconda3\\python",
+
+    // Directory in which the conda envs are stored
+    // Default location is the user's home directory
+    "environment_directory": "C:\\ProgramData\\Anaconda3\\envs\\",
+
+    // configuration is the path to conda's configuration file
+    "configuration": "C:\\Users\\liedji\\.condarc",
+
+    // when true, the scripts will be run through the shell
+    // If your code has a GUI (e.g. a matplotlib plot),
+    // this needs to be true, otherwise Windows suppresses it.
+    "run_through_shell": false,
+
+    // when true, the script execution will be handed over to
+    // the pythonw executable, instead of python
+    "use_pythonw": false,
+}
+
+```
+3. Use conda as your build system 
+4. Type (ctrl+shift+P) and chose your conda environnement (root(python3) or python2 or other)
+
+That is !
