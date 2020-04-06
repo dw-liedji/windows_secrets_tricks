@@ -88,7 +88,7 @@ DD9AF44B 99C49590 D2DBDEE1 75860FD2
 1. install conda package from the control package of sublime text 3
 2. open the conda user setting file an configure like this
 
-```JSON
+```Javascript
 
 // Default settings for sublime-text-conda:
 {
