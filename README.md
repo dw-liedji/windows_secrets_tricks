@@ -118,3 +118,30 @@ DD9AF44B 99C49590 D2DBDEE1 75860FD2
 4. Type (ctrl+shift+P) and chose your conda environnement (root(python3) or python2 or other)
 
 That is !
+
+### Setting sublime text for c/c++ program including user headers files
+1. create a new folder inside your project folder and name it *lib*
+2. add this following code to your build system and name *c-cpp-build*
+
+```Javascript
+{
+    "cmd": "g++ -Wall ${file_path}/lib/*.cpp ${file} -o ${file_base_name} && ${file_base_name}",
+    "selector": "source.c++",
+    "working_dir": "${file_path}",
+    "shell": true,
+
+
+    "variants": [
+        {
+            "name": "Run",
+            "cmd": "g++ -Wall ${file_path}/lib/*.cpp ${file} -o ${file_base_name} && ${file_base_name}",
+            "working_dir": "${file_path}",
+            "shell": true
+
+        }
+     ]
+
+}
+
+```
+3. make sure that all your header files are inside the *lib* folder and finally use ctrl+B or ctrl+shift+b and select *c-cpp-build* as your build system.
