@@ -1,6 +1,38 @@
 # windows_secrets_tricks
 In this repository some windows cool tricks are documented
 
+## Froom kaggle to google colab snippets
+
+install kaggle first:
+
+`pip install kaggle`
+
+```json
+
+!mkdir ~/.kaggle
+!touch ~/.kaggle/kaggle.json
+
+api_token = {"username":"dgbsliedji","key":"82810247451e5b158ae4e8aef0f801eb"}
+
+import json
+
+with open('/root/.kaggle/kaggle.json', 'w') as file:
+    json.dump(api_token, file)
+
+!chmod 600 ~/.kaggle/kaggle.json
+```
+
+list popular kaggle datasests with :
+
+`!kaggle datasets list`
+
+download and unzip datasets using:
+
+`!kaggle datasets download -d shayanfazeli/heartbeat -p "/content/drive/My Drive/Colab Datasets" --unzip`
+
+download data set only :
+
+`!kaggle datasets download -d shayanfazeli/heartbeat -p "/content/drive/My Drive/Colab Datasets"`
 
 
 ## use windows colortool  to change your command prompt color themes
@@ -146,34 +178,4 @@ That is !
 ```
 3. make sure that all your header files are inside the *lib* folder and finally use ctrl+B or ctrl+shift+b and select *c-cpp-build* as your build system.
 
-## Froom kaggle to google colab snippets
-
-install kaggle first:
-
-`pip install kaggle`
-
-```json
-
-!mkdir ~/.kaggle
-!touch ~/.kaggle/kaggle.json
-
-api_token = {"username":"dgbsliedji","key":"82810247451e5b158ae4e8aef0f801eb"}
-
-import json
-
-with open('/root/.kaggle/kaggle.json', 'w') as file:
-    json.dump(api_token, file)
-
-!chmod 600 ~/.kaggle/kaggle.json```
-
-list popular kaggle datasests with :
-
-`!kaggle datasets list`
-
-download and unzip datasets using:
-
-!kaggle datasets download -d shayanfazeli/heartbeat -p "/content/drive/My Drive/Colab Datasets" --unzip
-
-download data set only :
-`!kaggle datasets download -d shayanfazeli/heartbeat -p "/content/drive/My Drive/Colab Datasets"`
 
